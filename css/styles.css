@@ -1,0 +1,137 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 0.8s ease;
+    background-color: #f0f0f0;
+    color: #333;
+   
+}
+
+.container {
+    background-color: rgb(248, 248, 248);
+}
+
+.titulo {
+    text-align: center;
+    color: #033e58dc;
+}
+
+.calculator {
+    width: 320px;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 2px 4px 8px rgb(19, 92, 35);
+}
+
+.display {
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+input[type="text"] {
+    width: 94%;
+    padding: 10px;
+    font-size: 24px;
+    text-align: right;
+    background-color: #e2e0e0;
+    border: none;
+    border-radius: 8px;
+    color: #000;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #d9dada;
+}
+
+.operator {
+    background-color: #3eebd4;
+    color: #1a1a1a;
+}
+
+.theme-toggle {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#themeButton {
+    padding: 8px 16px;
+    border-radius: 18px;
+    cursor: pointer;
+    color: #fffefe;
+    border: none;
+}
+
+.container-theme{
+    text-align: end;
+}
+
+#toggle {
+    display: none;
+}
+
+#labelToggle {
+    font-size: 1.2em;
+    color: #2c2c2c;
+    cursor: pointer;
+}
+
+#labelToggle i{
+    color: rgb(255, 255, 255);
+
+}
+
+.select-theme {
+    margin-top: 2em;
+    width: 37px; /* Ancho y alto del botón */
+    height: 37px;
+    background-color: #000000e3;
+    border-radius: 50%;
+    border: solid 2px #37ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+.select-theme:hover{
+    opacity: .95;
+}
+
+
+.dark-theme {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+.dark-theme .select-theme{
+    filter: invert(1); 
+}
+
+.dark-theme .container{
+    filter: invert(1);
+}
+
+.dark-theme .select-theme{
+    border: solid 1px #faf3f3;
+}
+
+.dark-theme #labelToggle i{
+    color: yellow;
+
+}

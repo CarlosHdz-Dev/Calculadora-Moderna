@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora HDZ</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="calculator">
+      <h1 class="titulo">Calculadora</h1>
+      <div class="display">
+        <input type="text" id="result" readonly />
+      </div>
+      <div class="buttons">
+        <button class="operator" onclick="clearDisplay()">C</button>
+        <button class="operator" onclick="backspace()">⌫</button>
+        <button class="operator" onclick="appendToDisplay('*')">x</button>
+        <button class="operator" onclick="appendToDisplay('/')">÷</button>
+        <button onclick="appendToDisplay('7')">7</button>
+        <button onclick="appendToDisplay('8')">8</button>
+        <button onclick="appendToDisplay('9')">9</button>
+        <button class="operator" onclick="appendToDisplay('+')">+</button>
+        <button onclick="appendToDisplay('4')">4</button>
+        <button onclick="appendToDisplay('5')">5</button>
+        <button onclick="appendToDisplay('6')">6</button>
+        <button class="operator" onclick="appendToDisplay('-')">-</button>
+        <button onclick="appendToDisplay('1')">1</button>
+        <button onclick="appendToDisplay('2')">2</button>
+        <button onclick="appendToDisplay('3')">3</button>
+        <button class="operator" id="equals" onclick="calculate()">=</button>
+        <br />
+        <button id="zero" onclick="appendToDisplay('0')">0</button>
+        <button onclick="appendToDisplay('.')">.</button>
+      </div>
+
+      <div class="container-theme">
+            <button class="select-theme" role="button">
+              <input type="checkbox" id="toggle" />
+              <label for="toggle" id="labelToggle"><i class="fa-solid fa-moon"></i></label>
+            </button>
+
+          </div>
+
+        </div>
+    </div>
+    <script src="./scritp/scritp.js"></script>
+
+</body>
+
+</html>

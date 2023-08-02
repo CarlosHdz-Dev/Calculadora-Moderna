@@ -37,22 +37,6 @@ function toggleTheme() {
     return !pattern.test(expression);
   }
   
-  /*function calculate() {
-    const result = document.getElementById("result");
-    const expression = result.value;
-  
-    if (!isValidExpression(expression)) {
-      result.value = "Expresion Invalida";
-      return clearDisplay();
-    }
-  
-    try {
-      result.value = eval(expression);
-    } catch (error) {
-      result.value = "Error";
-      return clearDisplay();
-    }
-  }*/
 
   function calculate() {
     const result = document.getElementById("result");
@@ -77,7 +61,7 @@ function toggleTheme() {
     }
   }
 
-
+//Eliminar el ultimo caracter
   function backspace() {
     const result = document.getElementById("result");
     let expression = result.value;
